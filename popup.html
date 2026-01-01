@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeetCode Exporter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <header>
+    <h2>
+      <!-- LeetCode-style Icon -->
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M16.118 1.767a1 1 0 0 1 1.764 0l4.95 8.573a1 1 0 0 1 0 1.002l-4.95 8.573a1 1 0 0 1-1.764 0l-4.95-8.573a1 1 0 0 1 0-1.002l4.95-8.573Z"
+          fill="currentColor" fill-opacity="0.3" />
+        <path
+          d="M7.882 5.233a1 1 0 0 1 1.764 0l4.95 8.573a1 1 0 0 1 0 1.002l-4.95 8.573a1 1 0 0 1-1.764 0l-4.95-8.573a1 1 0 0 1 0-1.002l4.95-8.573Z"
+          fill="currentColor" />
+      </svg>
+      History Export
+    </h2>
+  </header>
+
+  <main>
+    <div id="mainContent">
+      <div class="control-group">
+        <div id="toggleOptionsBtn" class="collapsible">
+          <span>Export Configuration</span>
+        </div>
+        <div id="optionsContent" class="content">
+          <div class="content-inner">
+            <ul id="fieldList" class="field-list">
+              <!-- Fields injected by JS -->
+            </ul>
+            <div class="hint-text">Drag items to reorder</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button id="startBtn" class="primary-btn">Start Export</button>
+        <button id="stopBtn" class="danger-btn hidden">Stop Export</button>
+      </div>
+
+      <div id="status">Ready to start</div>
+    </div>
+
+    <div id="errorView" class="hidden">
+      <div class="error-container">
+        <p>Please navigate to the LeetCode Progress page to use this extension.</p>
+        <button id="redirectBtn" class="secondary-btn">Go to Progress Page</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

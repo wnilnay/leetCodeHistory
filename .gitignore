@@ -1,0 +1,18 @@
+# Build and Tools
+tools/
+package_extension.py
+icons/resize_script.py
+
+# Source Assets
+icons/source_icon.png
+icons/store_logo.png
+
+# Build Artifacts
+*.zip
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# User specific configs
+.vscode/
