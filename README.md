@@ -1,10 +1,10 @@
 # LeetCode History Exporter 🚀
 
-[English](#leetcode-history-exporter-) | [中文說明](#leetcode-history-exporter--1)
+[中文說明](#leetcode-history-exporter-) | [English](#leetcode-history-exporter--1)
 
 ---
 
-# LeetCode History Exporter (中文)
+# LeetCode History Exporter
 
 這是一個瀏覽器擴充功能，可以將您的 LeetCode 提交紀錄匯出為 JSON 檔案。非常適合用來備份您的進度或分析您的刷題歷程！
 
