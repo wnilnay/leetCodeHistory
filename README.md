@@ -14,7 +14,7 @@
 ## ✨主要功能
 
 *   **自動翻頁匯出**：自動遍歷您的所有提交紀錄頁面並抓取所有資料。
-*   **可自訂欄位**：選擇您想要匯出的資料（ID、標題、難度、網址、時間戳記、語言等）。
+*   **可自訂欄位**：選擇您想要匯出的資料（註：ID 為必須匯出且不可更改順序，其他如標題、難度、網址、時間戳記、提交次數等可自訂）。
 *   **拖放介面**：在彈出視窗中輕鬆拖放以重新排序匯出欄位。
 *   **JSON 輸出**：獲得一份乾淨、結構化的 JSON 格式刷題紀錄。
 *   **安全檢查**：在執行前會驗證您是否位於正確的頁面，以防止錯誤。
@@ -22,7 +22,8 @@
 ## 📥 安裝方式
 
 ### 從商店安裝
-*(待發布後補充 Edge/Chrome 商店連結)*
+*   **Microsoft Edge**: [點此前往 Edge 附加元件商店](https://microsoftedge.microsoft.com/addons/detail/lglofodhlldkkkjnhmnapnhcdkemajce)
+*   **Google Chrome**: 目前尚未上架 Chrome 商店，若是 Chrome 使用者，只能使用手動安裝方式。
 
 ### 手動安裝 (開發者模式)
 1.  複製此 GitHub 倉庫或下載原始碼。
@@ -38,7 +39,7 @@
 2.  **必須**前往 **Progress (進度)** 頁面：[https://leetcode.com/progress/](https://leetcode.com/progress/)
     *   *注意：此擴充功能設計為在此頁面運作，若不在該頁面將無法使用。*
 3.  點擊瀏覽器工具列中的擴充功能圖示。
-4.  (可選) 勾選或排序您想要匯出的欄位。
+4.  (可選) 點擊 **Export Configuration** 來展開/縮合 介面，勾選或排序您想要匯出的欄位。
 5.  點擊 **Start Export** 按鈕。
 6.  等待處理完成，瀏覽器將會自動下載 `leetcode_submission_history.json` 檔案。
 
@@ -68,7 +69,7 @@ A browser extension to export your LeetCode submission history to a JSON file. P
 ## ✨ Features
 
 *   **Paginated Export**: Automatically traverses through your submission history pages to grab all records.
-*   **Configurable Fields**: Choose exactly what data you want to export (ID, Title, Difficulty, URL, Timestamp, Language, etc.).
+*   **Configurable Fields**: Choose exactly what data you want to export (Note: ID must be exported and cannot be reordered; others like Title, Difficulty, URL, Timestamp, Language, etc. are customizable).
 *   **Drag & Drop UI**: Reorder export fields easily in the popup.
 *   **JSON Output**: Get a clean, structured JSON file of your coding history.
 *   **Safety Checks**: Validates that you are on the correct page before running to prevent errors.
@@ -76,7 +77,8 @@ A browser extension to export your LeetCode submission history to a JSON file. P
 ## 📥 Installation
 
 ### From Store
-*(Add link to Edge/Chrome Web Store here when published)*
+*   **Microsoft Edge**: [Get it from Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/lglofodhlldkkkjnhmnapnhcdkemajce)
+*   **Google Chrome**: Not listed on Chrome Web Store yet. Chrome users please use the manual installation method below.
 
 ### Manual Installation (Developer Mode)
 1.  Clone this repository or download the source code.
@@ -92,7 +94,7 @@ A browser extension to export your LeetCode submission history to a JSON file. P
 2.  Navigate to the **Progress** page: [https://leetcode.com/progress/](https://leetcode.com/progress/)
     *   *Note: The extension is designed to work efficiently from this page.*
 3.  Click the extension icon in your browser toolbar.
-4.  (Optional) Configure which fields you want to export.
+4.  (Optional) Click **Export Configuration** to expand/collapse the interface, and configure which fields you want to export.
 5.  Click **Start Export**.
 6.  Wait for the process to complete. A `leetcode_submission_history.json` file will be downloaded automatically.
 

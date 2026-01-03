@@ -26,7 +26,7 @@ async function checkUrl() {
             document.getElementById('mainContent').classList.add('hidden');
             document.getElementById('errorView').classList.remove('hidden');
             document.getElementById('redirectBtn').addEventListener('click', () => {
-                chrome.tabs.update(tabs[0].id, { url: 'https://leetcode.com/progress/' });
+                chrome.tabs.create({ url: 'https://leetcode.com/progress/' });
                 window.close();
             });
             return false;
