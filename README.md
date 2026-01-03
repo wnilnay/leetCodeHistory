@@ -65,7 +65,7 @@
 A browser extension to export your LeetCode submission history to a JSON file. Perfect for backing up your progress or analyzing your coding journey!
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-1.1-green.svg)
+![Version](https://img.shields.io/badge/version-1.3-green.svg)
 
 ## ✨ Features
 
