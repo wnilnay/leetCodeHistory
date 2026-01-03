@@ -9,7 +9,7 @@
 這是一個瀏覽器擴充功能，可以將您的 LeetCode 提交紀錄匯出為 JSON 檔案。非常適合用來備份您的進度或分析您的刷題歷程！
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-1.1-green.svg)
+![Version](https://img.shields.io/badge/version-1.3-green.svg)
 
 ## ✨主要功能
 
@@ -38,6 +38,7 @@
 1.  登入 [LeetCode](https://leetcode.com)。
 2.  **必須**前往 **Progress (進度)** 頁面：[https://leetcode.com/progress/](https://leetcode.com/progress/)
     *   *注意：此擴充功能設計為在此頁面運作，若不在該頁面將無法使用。*
+    *   *重要提示：擴充功能會從「目前所在的頁面」開始往後抓取直到最後一頁。若您不在第一頁，將不會抓取目前頁面之前的紀錄。*
 3.  點擊瀏覽器工具列中的擴充功能圖示。
 4.  (可選) 點擊 **Export Configuration** 來展開/縮合 介面，勾選或排序您想要匯出的欄位。
 5.  點擊 **Start Export** 按鈕。
@@ -93,6 +94,7 @@ A browser extension to export your LeetCode submission history to a JSON file. P
 1.  Log in to [LeetCode](https://leetcode.com).
 2.  Navigate to the **Progress** page: [https://leetcode.com/progress/](https://leetcode.com/progress/)
     *   *Note: The extension is designed to work efficiently from this page.*
+    *   *Important: The extension will start scraping from the "current page" and proceed to the last page. It will NOT capture records from pages prior to the current one.*
 3.  Click the extension icon in your browser toolbar.
 4.  (Optional) Click **Export Configuration** to expand/collapse the interface, and configure which fields you want to export.
 5.  Click **Start Export**.
