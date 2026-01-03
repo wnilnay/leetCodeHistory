@@ -26,7 +26,13 @@ async function checkUrl() {
             document.getElementById('mainContent').classList.add('hidden');
             document.getElementById('errorView').classList.remove('hidden');
             document.getElementById('redirectBtn').addEventListener('click', () => {
-                chrome.tabs.create({ url: 'https://leetcode.com/progress/' });
+                const currentUrl = tabs[0].url;
+                const isNewTab = currentUrl === 'edge://newtab/' || currentUrl === 'chrome://newtab/' || currentUrl === 'about:blank';
+                if (isNewTab) {
+                    chrome.tabs.update(tabs[0].id, { url: 'https://leetcode.com/progress/' });
+                } else {
+                    chrome.tabs.create({ url: 'https://leetcode.com/progress/' });
+                }
                 window.close();
             });
             return false;
